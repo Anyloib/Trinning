@@ -19,12 +19,9 @@
         <Slider x:Name="sldVolumen" HorizontalAlignment="Left" Margin="457,38,0,0" VerticalAlignment="Top" Width="22" Orientation="Vertical" Height="162" Maximum="1.5" Value="1" Thumb.DragCompleted="sldVolumen_DragCompleted" ValueChanged="sldVolumen_ValueChanged"/>
         <Button x:Name="btnCortar" Content="Cortar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="289,106,0,0" Click="btnCortar_Click"/>
         <Button x:Name="btnCrearFrecuencia" Content="Crear Frecuencia" HorizontalAlignment="Left" Margin="10,131,0,0" VerticalAlignment="Top" Width="107"  Height="24" Click="btnCrearFrecuencia_Click"/>
-        <TextBox x:Name="txtFrecuencia" HorizontalAlignment="Left" Height="23" Margin="10,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="lblFrecuencia" Content="Frecuencia:" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblSegundo" Content="Segundo:" HorizontalAlignment="Left" Margin="178,160,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtSegundo" HorizontalAlignment="Left" Height="23" Margin="152,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="lblNombre" Content="Nombre:" HorizontalAlignment="Left" Margin="308,160,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="23" Margin="308,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnOffsetProvider" Content="Genera archivo con OffsetProvider" HorizontalAlignment="Left" Margin="152,131,0,0" VerticalAlignment="Top" Width="201" Height="24" Click="btnOffsetProvider_Click"/>
+        <Button x:Name="btnReproducirSeñal" Content="Reproducir Señal" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top" Width="123" Height="26" Click="btnReproducirSeñal_Click"/>
+        <Slider x:Name="sldFrecuencia" HorizontalAlignment="Left" Margin="152,160,0,0" VerticalAlignment="Top" Height="26" Width="201" Maximum="20000" Minimum="20" SmallChange="0" Value="5000" ValueChanged="sldFrecuencia_ValueChanged"/>
 
     </Grid>
 </Window>
